@@ -246,6 +246,9 @@ p{ margin-bottom: 1em; }
 
 body{ background: #fff; .font; }
 
+h1{ display: inline-block; vertical-align: bottom; width: 20%; margin: 0 9% 0 0;
+	img{ width: 100%; height: auto; }
+}
 h2{ margin: 0 0 @margen 0; .font(3em, 1, 'proxima-nova', 700); color: @highlight; }
 
 hr{ height: 2px; border: 0; margin: 0 0 (@margen*2) 0; background: @highlight; }
@@ -253,15 +256,15 @@ hr{ height: 2px; border: 0; margin: 0 0 (@margen*2) 0; background: @highlight; }
 section{ margin-bottom: (@margen*2); }
 
 .boton{ padding: (@margen/4); border: 3px solid @highlight; color: @highlight; text-decoration: none; text-transform: uppercase; .font(1em,1,'proxima-nova', 700); .border-radius; .transition;
-	&:hover{  }
+	&:hover{ background: @highlight; color: @claro;  }
 }
 
 /*** HEADER ***/
 
 header{ margin-bottom: (@margen*2); padding: @margen 0; border-bottom: 1px solid @highlight; }
 
-nav{
-	a{ color: @obscuro; text-decoration: none; text-transform: uppercase; }
+nav{ display: inline-block; vertical-align: bottom; width: 70%;
+	a{ display: inline-block; vertical-align: middle; width: 19%; color: @obscuro; text-align: center; text-decoration: none; text-transform: uppercase; }
 }
 
 .color-productividad{ color: @productividad; }
@@ -271,8 +274,12 @@ nav{
 
 /*** MAIN ***/
 
-.slider{
+.slider{ position: relative;
 	p{ .font(2em, 1); color: @highlight; }
+	.cycle-control{ color: @highlight; font-size: 3em; position: absolute; top: 40%; cursor: pointer; z-index: 9999;
+		&.cycle-prev{ left: 0; }
+		&.cycle-next{ right: 0; }
+	}
 }
 
 //Beneficios
