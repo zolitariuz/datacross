@@ -276,12 +276,19 @@ nav{ display: inline-block; vertical-align: bottom; width: 70%;
 
 .slider{ position: relative;
 	p{ .font(2em, 1); color: @highlight; }
-	.cycle-control{ color: @highlight; font-size: 3em; position: absolute; top: 40%; cursor: pointer; z-index: 9999;
-		&.cycle-prev{ left: 0; }
-		&.cycle-next{ right: 0; }
+	.cycle-control{ color: @claro; font-size: 5em; position: absolute; top: 40%; cursor: pointer; z-index: 99999;
+		&.cycle-prev{ left: 20px; }
+		&.cycle-next{ right: 20px; }
 	}
 	.slide{ width: 100%;
-		> img{ width: 100%; height: auto; position: absolute; z-index: -1; }
+		> img{ width: 100%; height: auto; position: relative; z-index: -1; }
+		> div{ width: 100%; position: absolute; top: 0; left: 0; z-index: 1;
+			> div{ margin-top: 5%;
+				h2, p{ padding: (@margen/2); background: rgba(255, 255, 255, 0.8);  }
+				p{ margin-bottom: 0; }
+				.boton{ display: block; width: 30%; margin: 1em auto 0 auto; background: @claro; color: @highlight; text-align: center; text-decoration: uppercase; }
+			}
+		}
 	}
 }
 
