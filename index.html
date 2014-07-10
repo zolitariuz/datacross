@@ -52,57 +52,143 @@
 					data-cycle-swipe="true"
 				>
 					<div class="slide clearfix">
-						<div class="columna xmall-5">
-							<img src="images/sae.png" alt="SAE">
-						</div>
-						<div class="columna xmall-7">
-							<h2>Diseñado exclusivamente para SAE.</h2>
-							<p>Explotación de Información de SAE, con una simple conexión.</p>
+						<img src="images/slider-1.jpg" alt="">
+						<div>
+							<h2 class="text-center">Diseñado exclusivamente para SAE.</h2>
+							<p class="text-center">Explotación de Información de SAE, con una simple conexión.</p>
+							<img class="columna xmall-6 center" src="images/sae.png" alt="SAE">
 							<a href="#" class="boton">Solicita un demo</a>
 						</div>
 					</div><!-- slide -->
 					<div class="slide clearfix">
-						<div class="columna xmall-5">
-							<img src="images/sae.png" alt="SAE">
-						</div>
+						<img src="images/slider-2.jpg" alt="">
 						<div class="columna xmall-7">
-							<h2>Diseñado exclusivamente para SAE.</h2>
-							<p>Explotación de Información de SAE, con una simple conexión.</p>
-							<a href="#" class="boton">Solicita un demo</a>
+							<h2>Tome decisiones con seguridad.</h2>
+							<p>Anticipe y reaccione ante los cambios oportunamente.</p>
+						</div>
+					</div><!-- slide -->
+					<div class="slide clearfix">
+						<img src="images/slider-3.jpg" alt="">
+						<div class="columna xmall-7">
+							<h2>Explote su información.</h2>
+							<p>De forma confiable, rápida y fácil.</p>
+						</div>
+					</div><!-- slide -->
+					<div class="slide clearfix">
+						<img src="images/slider-4.jpg" alt="">
+						<div class="columna xmall-7">
+							<h2>Obtenga reportes instantáneos.</h2>
+							<p>Sin recaptura de la información y sin conocimientos de programación.</p>
 						</div>
 					</div><!-- slide -->
 
 					<div class="cycle-control cycle-prev"><i class="fa fa-angle-left"></i></div>
-    				<div class="cycle-control cycle-next"><i class="fa fa-angle-right"></i></div>
+    				<div class="cycle-control cycle-next"><i class="fa fa-anhttp://jquery.malsup.com/cycle2/gle-right"></i></div>
 
 				</section><!-- slider -->
 
 				<hr class="columna xmall-4 center">
 
 				<section class="width clearfix beneficios">
-					<div class="columna xmall-3 beneficio">
-						<i class="fa color-productividad fa-clock-o"></i>
-						<h3 class="text-center">Productividad</h3>
-						<p class="text-center">Tome decisiones empresariales con seguridad y anticipación basándose en información confiable y oportuna.</p>
-						<p class="text-center">Potencie la capacidad de SAE con datos de gran importancia que le ayuden a cumplir con los objetivos de la compañía.</p>
-					</div>
-					<div class="columna xmall-3 beneficio">
-						<i class="fa color-explotacion fa-info-circle"></i>
-						<h3 class="text-center">Explotación de la información</h3>
-						<p class="text-center">Tome decisiones empresariales con seguridad y anticipación basándose en información confiable y oportuna.</p>
-						<p class="text-center">Potencie la capacidad de SAE con datos de gran importancia que le ayuden a cumplir con los objetivos de la compañía.</p>
-					</div>
-					<div class="columna xmall-3 beneficio">
-						<i class="fa color-dinamismo fa-refresh"></i>
-						<h3 class="text-center">Dinamismo</h3>
-						<p class="text-center">Tome decisiones empresariales con seguridad y anticipación basándose en información confiable y oportuna.</p>
-						<p class="text-center">Potencie la capacidad de SAE con datos de gran importancia que le ayuden a cumplir con los objetivos de la compañía.</p>
-					</div>
-					<div class="columna xmall-3 beneficio">
-						<i class="fa color-personalizable fa-puzzle-piece"></i>
-						<h3 class="text-center">Personalizable</h3>
-						<p class="text-center">Tome decisiones empresariales con seguridad y anticipación basándose en información confiable y oportuna.</p>
-						<p class="text-center">Potencie la capacidad de SAE con datos de gran importancia que le ayuden a cumplir con los objetivos de la compañía.</p>
+					<div class="columna xmall-6">
+						<div class="full beneficio clearfix" data-cycle-cmd="goto" data-cycle-arg="0" data-cycle-context=".slideshow-beneficios">
+							<i class="fa color-productividad fa-clock-o"></i>
+							<h3>Productividad</h3>
+						</div>
+						<div class="full beneficio disabled" data-cycle-cmd="goto" data-cycle-arg="1" data-cycle-context=".slideshow-beneficios">
+							<i class="fa color-explotacion fa-info-circle"></i>
+							<h3>Explotación de la información</h3>
+						</div>
+						<div class="full beneficio disabled" data-cycle-cmd="goto" data-cycle-arg="2" data-cycle-context=".slideshow-beneficios">
+							<i class="fa color-dinamismo fa-refresh"></i>
+							<h3>Dinamismo</h3>
+						</div>
+						<div class="full beneficio disabled" data-cycle-cmd="goto" data-cycle-arg="3" data-cycle-context=".slideshow-beneficios">
+							<i class="fa color-personalizable fa-puzzle-piece"></i>
+							<h3>Personalizable</h3>
+						</div>
+					</div><!-- columna xmall-6 -->
+					<div class="columna xmall-6 cycle-slideshow slideshow-beneficios"
+						data-cycle-slides=".slide-beneficio"
+						data-cycle-fx="scrollHorz"
+						data-cycle-swipe="true"
+						data-cycle-timeout="0"
+					>
+						<div class="slide-beneficio productividad">
+							<p>Tome decisiones empresariales con seguridad y anticipación basándose en información confiable y oportuna.</p>
+							<p>Potencie la capacidad de SAE con datos de gran importancia que le ayuden a cumplir con los objetivos de la compañía.</p>
+							<div class="full caracteristica">
+								<span class="xmall-3 fa-stack fa-3x">
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+								</span>
+								<p class="xmall-9"> Diseñado exclusivamente para SAE. </p>
+							</div>
+							<div class="full caracteristica">
+								<span class="xmall-3 fa-stack fa-3x">
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fa fa-hand-o-up fa-stack-1x fa-inverse"></i>
+								</span>
+								<p class="xmall-9">Interfaz amigable e intuitiva: “Drag & Drop”.</p>
+							</div>
+						</div>
+
+						<div class="slide-beneficio explotacion clearfix">
+							<p>Profundice en su propia información con un sencillo cruce de datos de todos los catálogos y cifras de SAE.</p>
+							<p>Mida el impacto de sus acciones, rentabilidad y crecimiento de la empresa desde distintos puntos de vista.</p>
+							<div class="full caracteristica">
+								<span class="xmall-3 fa-stack fa-3x">
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fa fa-share fa-stack-1x fa-inverse"></i>
+								</span>
+								<p class="xmall-9">La información se extrae sin necesidad de que los usuarios se salgan.</p>
+							</div>
+							<div class="full caracteristica">
+								<span class="xmall-3 fa-stack fa-3x">
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fa fa-database fa-stack-1x fa-inverse"></i>
+								</span>
+								<p class="xmall-9">Obtención de información sin salir del sistema y sin afectar la base de datos.</p>
+							</div>
+						</div>
+
+						<div class="slide-beneficio dinamismo">
+							<p>Reduzca a segundos el tiempo requerido para generar complejos reportes.</p>
+							<p>Sin recapturas y sin complicaciones. Con una simple conexión a SAE, consulte la información sin salir del sistema.</p>
+							<div class="full caracteristica">
+								<span class="xmall-3 fa-stack fa-3x">
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fa fa-file-excel-o fa-stack-1x fa-inverse"></i>
+								</span>
+								<p class="xmall-9">Manejo e integración de filtros avanzados con exportación a Excel.</p>
+							</div>
+							<div class="full caracteristica">
+								<span class="xmall-3 fa-stack fa-3x">
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fa fa-cubes fa-stack-1x fa-inverse"></i>
+								</span>
+								<p class="xmall-9">Tecnología cliente/servidor con estructuras SQL.</p>
+							</div>
+						</div>
+
+						<div class="slide-beneficio personalizable">
+							<p>Un software adaptable a los cambios gracias a una total integración con SAE.</p>
+							<p>Elabore reportes personalizados por área con el detalle necesario para la dirección o la operación.</p>
+							<div class="full caracteristica">
+								<span class="xmall-3 fa-stack fa-3x">
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fa fa-desktop fa-stack-1x fa-inverse"></i>
+								</span>
+								<p class="xmall-9">Visualización de consultas en pantalla y para impresión.</p>
+							</div>
+							<div class="full caracteristica">
+								<span class="xmall-3 fa-stack fa-3x">
+									<i class="fa fa-circle fa-stack-2x"></i>
+									<i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+								</span>
+								<p class="xmall-9">Opciones de seguridad y cifras personalizable por usuario.</p>
+							</div>
+						</div>
 					</div>
 				</section>
 
@@ -116,67 +202,6 @@
 							<p>Quem Tiberina descensio festo illo die tanto gaudio affecit, quanto L. Itaque eos id agere, ut a se dolores, morbos, debilitates repellant. At iam decimum annum in spelunca iacet. Deinde qui fit, ut ego nesciam, sciant omnes.</p>
 							<p><span>Pedro Jiménez - GNK</span></p>
 						</div>
-					</div>
-				</section>
-
-				<section class="width clearfix caracteristicas">
-
-					<div class="columna xmall-6 caracteristica">
-						<span class="xmall-3 fa-stack fa-3x">
-							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
-						</span>
-						<p class="xmall-9"> Diseñado exclusivamente para SAE. </p>
-					</div>
-
-					<div class="columna xmall-6 caracteristica">
-						<span class="xmall-3 fa-stack fa-3x">
-							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-database fa-stack-1x fa-inverse"></i>
-						</span>
-						<p class="xmall-9">Obtención de información sin salir del sistema y sin afectar la base de datos.</p>
-					</div>
-					<div class="columna xmall-6 caracteristica">
-						<span class="xmall-3 fa-stack fa-3x">
-							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-share fa-stack-1x fa-inverse"></i>
-						</span>
-						<p class="xmall-9">La información se extrae sin necesidad de que los usuarios se salgan.</p>
-					</div>
-					<div class="columna xmall-6 caracteristica">
-						<span class="xmall-3 fa-stack fa-3x">
-							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-desktop fa-stack-1x fa-inverse"></i>
-						</span>
-						<p class="xmall-9">Visualización de consultas en pantalla y para impresión.</p>
-					</div>
-					<div class="columna xmall-6 caracteristica">
-						<span class="xmall-3 fa-stack fa-3x">
-							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-file-excel-o fa-stack-1x fa-inverse"></i>
-						</span>
-						<p class="xmall-9">Manejo e integración de filtros avanzados con exportación a Excel.</p>
-					</div>
-					<div class="columna xmall-6 caracteristica">
-						<span class="xmall-3 fa-stack fa-3x">
-							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-						</span>
-						<p class="xmall-9">Opciones de seguridad y cifras personalizable por usuario.</p>
-					</div>
-					<div class="columna xmall-6 caracteristica">
-						<span class="xmall-3 fa-stack fa-3x">
-							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-hand-o-up fa-stack-1x fa-inverse"></i>
-						</span>
-						<p class="xmall-9">Interfaz amigable e intuitiva: “Drag & Drop”.</p>
-					</div>
-					<div class="columna xmall-6 caracteristica">
-						<span class="xmall-3 fa-stack fa-3x">
-							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-cubes fa-stack-1x fa-inverse"></i>
-						</span>
-						<p class="xmall-9">Tecnología cliente/servidor con estructuras SQL.</p>
 					</div>
 				</section>
 

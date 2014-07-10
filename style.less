@@ -255,13 +255,13 @@ hr{ height: 2px; border: 0; margin: 0 0 (@margen*2) 0; background: @highlight; }
 
 section{ margin-bottom: (@margen*2); }
 
-.boton{ padding: (@margen/4); border: 3px solid @highlight; color: @highlight; text-decoration: none; text-transform: uppercase; .font(1em,1,'proxima-nova', 700); .border-radius; .transition;
+.boton{ padding: (@margen/2); color: @claro; text-decoration: none; background: @highlight; .font(1em,1,'proxima-nova'); .border-radius(25px); .transition;
 	&:hover{ background: @highlight; color: @claro;  }
 }
 
 /*** HEADER ***/
 
-header{ margin-bottom: (@margen*2); padding: @margen 0; border-bottom: 1px solid @highlight; }
+header{ margin-bottom: (@margen*2); padding: @margen 0; border-bottom: 2px solid @highlight; }
 
 nav{ display: inline-block; vertical-align: bottom; width: 70%;
 	a{ display: inline-block; vertical-align: middle; width: 19%; color: @obscuro; text-align: center; text-decoration: none; text-transform: uppercase; }
@@ -280,13 +280,22 @@ nav{ display: inline-block; vertical-align: bottom; width: 70%;
 		&.cycle-prev{ left: 0; }
 		&.cycle-next{ right: 0; }
 	}
+	.slide{ width: 100%;
+		> img{ width: 100%; height: auto; position: absolute; z-index: -1; }
+	}
 }
 
 //Beneficios
-.beneficio{
-	i{ width: 100%; text-align: center; font-size: 6em; }
-	h3{ .font(1.6em, 1, 'proxima-nova', 700); color: @obscuro;  }
-	p{  }
+.beneficio{ margin-bottom: @margen; cursor: pointer;
+	i{ display: inline-block; vertical-align: middle; width: 16%; margin-right: 4%; font-size: 7em; }
+	h3{ display: inline-block; vertical-align: middle; width: 74%; margin: 0; .font(1.6em, 1, 'proxima-nova', 700); color: @obscuro; }
+	&.disabled{ opacity: 0.6; }
+}
+
+.slideshow-beneficios{ }
+
+.slide-beneficio{ padding: @margen; background: lighten(@obscuro, 60%);
+	> p{ .font(1.2em, 1, 'proxima-nova', 700); color: @highlight; }
 }
 
 //Formal
@@ -299,7 +308,7 @@ nav{ display: inline-block; vertical-align: bottom; width: 70%;
 //Caracteristicas
 .caracteristica{
 	.fa-stack{ display: inline-block; vertical-align: middle; width: 20%; color: @highlight; }
-	p{ display: inline-block; vertical-align: middle; width: 78%; margin: 0; }
+	p{ display: inline-block; vertical-align: middle; width: 78%; margin: 0; .font(1.2em, 1, 'proxima-nova', 700); color: @obscuro; }
 }
 
 /*** FOOTER ***/
