@@ -14,6 +14,7 @@
 		headerScroll();
 		$(document).on( 'scroll', function(){
 			headerScroll();
+			logoScroll();
 		});
 
 	});
@@ -34,4 +35,17 @@ function headerScroll(){
 	} else {
 		$('header').removeClass('scroll');
 	}
+}
+
+function logoScroll(){
+	var alturaHeader = $('header').height();
+	var scrollTop = $(window).scrollTop();
+	
+	if ( scrollTop >= alturaHeader ){
+		$('h1').css('width', '20%');
+		$('h1').css('margin-right', '14%');
+	} else if ( scrollTop < alturaHeader ){
+		$('h1').css('width', '25%');
+		$('h1').css('margin-right', '9%');
+	} 
 }

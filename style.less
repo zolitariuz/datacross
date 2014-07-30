@@ -249,14 +249,16 @@ p{ margin-bottom: 1em; }
 
 body{ background: #fff; .font; }
 
-h1{ display: inline-block; vertical-align: middle; width: 20%; margin: 0 14% 0 0;
+h1{ display: inline-block; vertical-align: middle; width: 25%; margin: 0 9% 0 0;
 	img{ width: 100%; height: auto; }
 }
 h2{ margin: 0; .font(3em, 1, 'proxima-nova', 700); color: @highlight; }
 
 hr{ height: 2px; border: 0; margin: 0 0 (@margen*2) 0; background: @highlight; }
 
-section{ margin-bottom: (@margen*2); }
+section{ margin-bottom: (@margen*2); 
+	&.historia { margin-top: @margen*2; text-align: justify; }
+}
 
 .boton{ padding: (@margen/2); color: @claro; text-decoration: none; background: @highlight; .font(1em,1,'proxima-nova'); .border-radius(25px); .transition;
 	&:hover{ background: @highlight; color: @claro;  }
@@ -303,11 +305,13 @@ nav{ display: inline-block; vertical-align: middle; width: 65%;
 .slider-wrapper{ width: 100%; height: 600px; margin-bottom: @margen; padding: 120px 0 0 0; background: url('images/main-bg.jpg') no-repeat 34% 0 fixed; }
 .slider{ position: relative;
 	p{ .font(2em, 1); color: @highlight; }
+	
 	.slide{ width: 100%;
 		div{ width: 100%; z-index: 1;
 			> div{ margin-top: 5%;
 				h2, p{ width: 50%; }
 				h2{ margin-bottom: (@margen/2); }
+				h2.highlight, p.highlight { color: @secundario;  } 
 				p{ margin-bottom: 0; }
 				.boton{ width: auto; margin: 1em 0; background: @highlight; color: @claro; text-align: center; text-decoration: uppercase; }
 			}
@@ -319,29 +323,32 @@ nav{ display: inline-block; vertical-align: middle; width: 65%;
 .beneficios{  }
 
 .beneficio{ margin-bottom: @margen; cursor: pointer;
-	i{ display: inline-block; vertical-align: middle; width: 16%; margin-right: 4%; font-size: 7em; }
+	i{ display: inline-block; vertical-align: middle; width: 14%; margin-right: 8%; font-size: 6em; }
 	h3{ display: inline-block; vertical-align: middle; width: 74%; margin: 0; .font(1.6em, 1, 'proxima-nova', 700); color: @obscuro; }
 	&.disabled{ opacity: 0.6; }
 }
 
-.slideshow-beneficios{ }
+.slideshow-beneficios{ overflow: hidden; }
 
-.slide-beneficio{ width: 100%; padding: @margen; background: @secundario;
-	> p{ .font(1.2em, 1, 'proxima-nova', 700); color: @claro; }
+.slide-beneficio{ width: 100%; padding: @margen*1.5; background: @highlight; border-radius: @margen*2;
+	> p{ .font(1.5em, 1, 'proxima-nova', 700); color: @claro; font-weight: normal; }
+
 }
 
 //Formal
-.formal{ padding: (@margen*2) 0; background: @highlight;
-	p{ .font(1.2em, 1.4em, 'adobe-garamond-pro', 400, italic); color: @claro;
+.formal{ margin-bottom: 0; padding: (@margen*2) 0; background: url('images/testimonio-bg.jpg') no-repeat @highlight center; background-size: cover;
+	p{ .font(1.6em, 1.6em, 'adobe-garamond-pro', 400, italic); color: @claro;
 		span{ .font(1em, 1, 'adobe-garamond-pro', 400); }
 	}
 }
 
 //Caracteristicas
 .caracteristica{
-	.fa-stack{ display: inline-block; vertical-align: middle; width: 20%; color: @claro; }
-	.fa-inverse{ color: @secundario; }
-	p{ display: inline-block; vertical-align: middle; width: 78%; margin: 0; .font(1.2em, 1, 'proxima-nova', 700); color: @claro; }
+	span { width:15%; display: inline-block; vertical-align: middle; .font(1.5em, 1em); 
+		i { color:@claro; }
+	}
+	
+	p{ display: inline-block; vertical-align: middle; width: 78%; margin: 0 0 @margen/2 0; .font(1em, 1.2em, 'proxima-nova', 700); color: @claro; font-weight: normal; }
 }
 
 /*** FOOTER ***/
