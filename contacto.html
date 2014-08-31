@@ -27,8 +27,8 @@
 		<![endif]-->
 		<div class="container">
 
-			<header class="block full">
-				<div class="width clearfix">
+			<header class="full">
+				<div class="width clearfix menu">
 					<h1>
 						<a href="index.html">
 							<img src="images/logo-datacross.png" alt="" />
@@ -47,15 +47,11 @@
 							<i class="fa fa-book"></i>
 							<span class="block text-center">historia</span>
 						</a>
-						<a class="activo" href="contacto.html">
+						<a href="contacto.html">
 							<i class="fa fa-envelope"></i>
-							<span class="block text-center">contacto</span>
+							<span class="block text-center">contacto / demo</span>
 						</a>
-						<a href="demo.html">
-							<i class="fa fa-flask"></i>
-							<span class="block text-center">pide un demo</span>
-						</a>
-						<a href="#">
+						<a>
 							<i class="fa fa-phone"></i>
 							<span class="block text-center">+52 (777) 315 9912</span>
 						</a>
@@ -64,27 +60,33 @@
 			</header>
 
 			<div class="main not-home">
-
-				<section class="historia datacross">
-					<div class="width clearfix">
-						<h2 class="columna xmall-6 text-center center margin-bottom">Contacto</h2>
-						<form class="columna xmall-7 center forma-contacto">
-							<label class="block full" for="nombre">Nombre:</label>
-							<input class="block full" type="text" name="nombre">
-							<label class="block full" for="mail">Mail:</label>
-							<input class="block full" type="text" name="mail">
-							<label class="block full" for="telefono">Telefono:</label>
-							<input class="block full" type="text" name="telefono">
-							<label class="block full" for="mensaje">Mensaje:</label>
-							<textarea class="block full" name="mensaje"></textarea>
-							<div class="clearfix">
-								<div class="left">
-									<input type="checkbox" name="demo" value="1"> Solicitar demo
-								</div>
-								<input class="right" type="submit" value="enviar">
-							</div>
-						</form>
-					</div>
+				<section class="historia full">
+						<div class="span margin-bottom"><img class="contacto-wrapper" src="images/descargas_ch.jpg"></div>
+						<div class="clear"></div>
+						<div class="container-blanco columna xmall-10 center block margin-bottom clearfix">
+							<h2 class="columna xmall-6 text-center center margin-bottom">Contacto</h2>
+							<form class="columna xmall-4 center block forma-contacto">
+								<label class="block full" for="nombre">Nombre:</label>
+								<input class="block" type="text" name="nombre">
+								<label class="block" for="empresa">Empresa:</label>
+								<input class="block" type="text" name="empresa">
+								<label class="block" for="mail">Mail:</label>
+								<input class="block" type="text" name="mail">
+								<label class="block" for="telefono">Teléfono:</label>
+								<input class="block" type="text" name="telefono">
+								<label class="block" for="mensaje">Mensaje:</label>
+								<textarea class="block" name="mensaje"></textarea>
+								<label class="block" for="suma">Verificador:</label>
+								6 + 3 =
+								<div class="clear"></div> 
+								<input class="verificador" type="number" name="suma">
+									<div class="span xmall-12 solicitar-demo">
+										<input type="checkbox" name="demo" value="1"> 
+										<p class="columna">Solicitar demo</p> 
+									</div>
+								<input class="columna xmall-3 right block" type="submit" value="enviar">
+							</form>
+						</div>	
 				</section>
 
 			</div><!-- main -->
@@ -102,6 +104,7 @@
 	<script src="js/jquery.js"></script>
 	<script src="js/plugins.js"></script>
 	<script src="js/functions.js"></script>
+	<script src="path/to/jquery.fitvids.js"></script>
 
 </html>
 
