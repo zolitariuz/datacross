@@ -28,7 +28,7 @@
 					startheight:500,
 					startwidth:960,
 					fullScreenAlignForce:"off",
-					autoHeight:"off",
+					autoHeight:"on",
 					hideTimerBar:"off",
 					hideThumbs:200,
 					hideNavDelayOnMobile:1500,

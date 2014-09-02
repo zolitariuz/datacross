@@ -1232,6 +1232,8 @@ border-style:none;
 .tp-bannershadow.tp-shadow3 {	background:url(../assets/shadow3.png) no-repeat; background-size:100% 100%; width:890px; height:60px;bottom:-60px;}
 
 
+.fondo {background-image: url(images/Pieza_Home.jpg) !important; background-size: 100%; }
+
 /********************************
 	-	FULLSCREEN VIDEO	-
 *********************************/
@@ -1487,7 +1489,7 @@ border-style:none;
 /************************************
 		-	TP BANNER TIMER		-
 *************************************/
-.tp-bannertimer								{	width:100%; height:10px; background:url(../assets/timer.png);position:absolute; z-index:200;top:0px;}
+.tp-bannertimer	{display:none;}
 .tp-bannertimer.tp-bottom					{	bottom:0px;height:5px; top:auto;}
 
 

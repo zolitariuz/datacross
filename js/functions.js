@@ -10,19 +10,19 @@
 			//console.log('s'+slide);
 			$('.slideshow-beneficios').cycle('goto', slide);
 				if (slide==0) {
-			$('.slideshow-beneficios').css('margin-top', '1%');
+			$('.slideshow-beneficios').css('margin-top', '0px');
 				};
 				if (slide==1) {
-			$('.slideshow-beneficios').css('margin-top', '10%');
+			$('.slideshow-beneficios').css('margin-top', '84px');
 				};
 				if (slide==2) {
-			$('.slideshow-beneficios').css('margin-top', '20%');
+			$('.slideshow-beneficios').css('margin-top', '168px');
 				};
 				if (slide==3) {
-			$('.slideshow-beneficios').css('margin-top', '30%');
+			$('.slideshow-beneficios').css('margin-top', '252px');
 				};
 				if (slide==4) {
-			$('.slideshow-beneficios').css('margin-top', '40%');
+			$('.slideshow-beneficios').css('margin-top', '336px');
 				};
 		});
 
@@ -57,7 +57,7 @@ jQuery(document).ready(function() {
 					jQuery('.tp-banner').show().revolution(
 					{
 						dottedOverlay:"none",
-						delay:16000,
+						delay:7000,
 						startwidth:1170,
 						startheight:500,
 						hideThumbs:200,
@@ -66,9 +66,9 @@ jQuery(document).ready(function() {
 						thumbHeight:50,
 						thumbAmount:5,
 						
-						navigationType:"bullet",
-						navigationArrows:"solo",
-						navigationStyle:"preview4",
+						navigationType:"none",
+						navigationArrows:"none",
+						navigationStyle:"none",
 						
 						touchenabled:"on",
 						onHoverStop:"on",
