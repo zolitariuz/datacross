@@ -1,24 +1,17 @@
 <!doctype html>
 	<head>
-
 		<meta charset="utf-8">
-
 		<title>Datacross</title>
-
 		<link rel="shortcut icon" href="images/favicon.ico">
 		<link rel="stylesheet" href="style.css">
-
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-
 		<meta name="description" content="">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="cleartype" content="on">
 		<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-
 		<script type="text/javascript" src="//use.typekit.net/miq6ffp.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-
 	</head>
 
 	<body>
@@ -27,7 +20,7 @@
 		<![endif]-->
 		<div class="container">
 
-<header class="full">
+			<header class="full">
 				<div class="width clearfix menu">
 					<h1>
 						<a href="index.html">
@@ -59,18 +52,18 @@
 				</div><!-- width -->
 			</header>
 
-			<div class="main not-home">		
+			<div class="main not-home">
 				<section class="historia full">
 					<div class="span margin-bottom"><img class="contacto-wrapper" src="images/descargas_ch.jpg"></div>
 						<div class="clear"></div>
 						<div class="container-blanco columna xmall-10 center block margin-bottom clearfix">
 						<h2 class="columna xmall-6 text-center center margin-bottom">Descargas</h2>
-						<form class="columna xmall-4 center block forma-contacto">
+						<form class="columna xmall-4 center block forma-contacto" action="descargas-recibido.php" method="post">
 							<div class="span xmall-12">
-								<input input type="checkbox" name="d1" value="datacross_v2">
+								<input input type="checkbox" name="datacross_v2" value="datacross_v2">
 								<p class="columna xmall-8">DataCross Versión 2.1</p> <div class="clear"></div>
-								<input type="checkbox" name="d2" value="guia_pdf">
-								<p class="columna xmall-8">Guía de Uso DataCross PDF</p>  
+								<input type="checkbox" name="guia_pdf" value="guia_pdf">
+								<p class="columna xmall-8">Guía de Uso DataCross PDF</p>
 							</div>
 
 							<label class="block" for="nombre">Nombre:</label>
@@ -81,13 +74,12 @@
 							<input class="block" type="text" name="mail">
 							<label class="block" for="telefono">Teléfono:</label>
 							<input class="block" type="text" name="telefono">
-							
+
 							<label class="block" for="suma">Verificador:</label>
 								6 + 3 =
-								<div class="clear"></div> 
-								<input class="verificador" type="number" name="suma">
+							<div class="clear"></div>
+							<input class="verificador" type="number" name="suma">
 							<div class="clearfix">
-								
 								<input class="columna xmall-4 right" type="submit" value="enviar">
 							</div>
 						</form>

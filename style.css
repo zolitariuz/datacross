@@ -1,5 +1,6 @@
 @charset 'utf-8';
-    html {
+
+html {
     color: #000;
     background: #fff;
 }
@@ -54,7 +55,6 @@ body {
     font: 13px/1.231 arial, helvetica, clean, sans-serif;
     *font-size: small;
     *font: x-small;
-    background-color:  #eee;
 }
 select, input, button, textarea {
     font: 99% arial, helvetica, clean, sans-serif;
@@ -180,7 +180,6 @@ figure {
 }
 .container {
     min-width: 300px;
-    background-color:  #eee;
 }
 .width {
     width: 80%;
@@ -286,16 +285,10 @@ p {
 .small {
     display: none;
 }
-::selection {
-    background: #004a97;
-    color: #fff;
-}
-::-moz-selection {
-    background: #004a97;
-    color: #fff;
-}
+
+html, body{ height: 100%; background: #eee; }
+
 body {
-    background: #eee;
     font:  1em / 1.4em "proxima-nova";
     font-weight: 300;
 }
@@ -416,8 +409,7 @@ nav a i {
 .color-caracteristicas {
     color: #e7b83b;
 }
-.main{ background: #333333;
-}
+
 .content p {
     font:  1.3em / 1.4em "proxima-nova";
     font-weight: 300;
@@ -478,8 +470,6 @@ nav a i {
     background-position: right top;
 }
 
-.main{background-color: #ccc;}
-
 .container-blanco{
     background: white;
     padding:20px;
@@ -516,7 +506,6 @@ nav a i {
     position: relative;
     margin-top: 0;
     padding: 0;
-    background-color: #ccc;
 }
 .tp-banner {
     width: 100%;
@@ -534,7 +523,7 @@ nav a i {
     font-weight: 600;
     font-family: "proxima-nova";
     color: #ec1c24;
-    text-decoration: none; 
+    text-decoration: none;
     padding: 10px;
     border-width: 0;
     border-color: #ffd658;
@@ -731,8 +720,8 @@ footer p {
 
 .solicitar-demo p {
     margin-right: 20px;
-    color:red; 
-    font-size:1.5em; 
+    color:red;
+    font-size:1.5em;
     font-weight:bold;
     border: none;
     display: inline-block;

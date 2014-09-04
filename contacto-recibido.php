@@ -1,3 +1,33 @@
+<?php
+
+	$nombre = $empresa = $mail = $telefono = $mensaje = $demo = '';
+
+	$nombre 	= ( isset($_POST['nombre']) ) ? $_POST['nombre'] : '';
+	$empresa 	= ( isset($_POST['empresa']) ) ? $_POST['empresa'] : '';
+	$mail 		= ( isset($_POST['mail']) ) ? $_POST['mail'] : '';
+	$telefono 	= ( isset($_POST['telefono']) ) ? $_POST['telefono'] : '';
+	$mensaje 	= ( isset($_POST['mensaje']) ) ? $_POST['mensaje'] : '';
+	$demo 		= ( isset($_POST['demo']) ) ? $_POST['demo'] : '';
+
+	$mail_to = 'clientes@sgwsistemas.com.mx, clientes@datacross.com.mx, gabriel.garcia@sgwsistemas.com.mx';
+	//$mail_to = 'raul@pcuervo.com';
+	$subject = 'Contacto Datacross '.$nombre;
+
+	$body_message = 'Nombre: '.$nombre."\n";
+	$body_message .= 'Empresa: '.$empresa."\n";
+	$body_message .= 'Mail: '.$mail."\n";
+	$body_message .= 'Telefono: '.$telefono."\n";
+	$body_message .= 'Mensaje: '.$mensaje."\n";
+	if ( $demo == '1' ){
+		$body_message .= '<strong>Solicitó demo</strong>';
+	}
+
+	$headers = 'From: '.$mail."\r\n";
+	$headers .= 'Reply-To: '.$mail."\r\n";
+
+	$mail_status = mail($mail_to, $subject, $body_message, $headers);
+
+?>
 <!doctype html>
 	<head>
 
@@ -60,32 +90,12 @@
 			</header>
 
 			<div class="main not-home">
-				<section class="historia full">
+				<section class="full">
 						<div class="span margin-bottom"><img class="contacto-wrapper" src="images/descargas_ch.jpg"></div>
 						<div class="clear"></div>
 						<div class="container-blanco columna xmall-10 center block margin-bottom clearfix">
-							<h2 class="columna xmall-6 text-center center margin-bottom">Contacto</h2>
-							<form class="columna xmall-4 center block forma-contacto" action="contacto-recibido.php" method="post">
-								<div class="span xmall-12 solicitar-demo">
-									<input type="checkbox" name="demo" value="1">
-									<p class="columna">Solicitar demostración</p>
-								</div>
-								<label class="block full" for="nombre">Nombre:</label>
-								<input class="block" type="text" name="nombre">
-								<label class="block" for="empresa">Empresa:</label>
-								<input class="block" type="text" name="empresa">
-								<label class="block" for="mail">Mail:</label>
-								<input class="block" type="text" name="mail">
-								<label class="block" for="telefono">Teléfono:</label>
-								<input class="block" type="text" name="telefono">
-								<label class="block" for="mensaje">Mensaje:</label>
-								<textarea class="block" name="mensaje"></textarea>
-								<label class="block" for="suma">Verificador:</label>
-								6 + 3 =
-								<div class="clear"></div>
-								<input class="verificador" type="number" name="suma">
-								<input class="columna xmall-4 right block" type="submit" value="enviar">
-							</form>
+							<h2 class="columna xmall-6 text-center center margin-bottom">Contacto recibido</h2>
+							<h3 class="text-center">Gracias por ponerte en contacto con nosotros, te contactarémos lo antes psoible.</h3>
 						</div>
 				</section>
 
@@ -107,4 +117,3 @@
 	<script src="path/to/jquery.fitvids.js"></script>
 
 </html>
-
