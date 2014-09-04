@@ -33,7 +33,11 @@
 
 		$(".video-ejemplos").fitVids();
 
-		$('.forma-contacto').validate();
+		$('.forma-contacto').validate({
+			rules:{
+				suma:{ sumIsCorrect: true }
+			}
+		});
 
 		//nuevo_slider
 		if( $('.tp-banner').length > 0 ){
@@ -112,8 +116,6 @@
 
 	});
 
-
-
 })(jQuery);
 
 $(document).ready(function() {
@@ -127,6 +129,9 @@ $(document).ready(function() {
     });
 });
 
+jQuery.validator.addMethod("sumIsCorrect", function(value, element) {
+    return this.optional(element) || (value == '9');
+}, "* La suma es incorrecta");
 
 function disable(elemento, hermanos){
 	$(hermanos).removeClass('abled').addClass('disabled');
