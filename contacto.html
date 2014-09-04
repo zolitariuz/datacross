@@ -71,19 +71,19 @@
 									<p class="columna">Solicitar demostración</p>
 								</div>
 								<label class="block full" for="nombre">Nombre:</label>
-								<input class="block" type="text" name="nombre">
+								<input class="block required" type="text" name="nombre">
 								<label class="block" for="empresa">Empresa:</label>
 								<input class="block" type="text" name="empresa">
 								<label class="block" for="mail">Mail:</label>
-								<input class="block" type="text" name="mail">
+								<input class="block required email" type="text" name="mail">
 								<label class="block" for="telefono">Teléfono:</label>
 								<input class="block" type="text" name="telefono">
-								<label class="block" for="mensaje">Mensaje:</label>
-								<textarea class="block" name="mensaje"></textarea>
+								<label class="block required" for="mensaje">Mensaje:</label>
+								<textarea class="block required" name="mensaje"></textarea>
 								<label class="block" for="suma">Verificador:</label>
 								6 + 3 =
 								<div class="clear"></div>
-								<input class="verificador" type="number" name="suma">
+								<input class="verificador required" type="number" name="suma">
 								<input class="columna xmall-4 right block" type="submit" value="enviar">
 							</form>
 						</div>

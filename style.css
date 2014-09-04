@@ -707,6 +707,8 @@ footer p {
     border: none;
 }
 
+.forma-contacto label.error{ color: red; font-size: 0.8em; position: relative; top: -20px; }
+
 .forma-contacto input[type='checkbox'] {
     width:auto;
     margin-right: 20px;
