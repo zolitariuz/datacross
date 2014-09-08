@@ -10,8 +10,8 @@
 	$telefono 		= ( isset($_POST['telefono']) ) ? $_POST['telefono'] : '';
 	$mensaje 		= ( isset($_POST['mensaje']) ) ? $_POST['mensaje'] : '';
 
-	//$mail_to = 'clientes@sgwsistemas.com.mx, clientes@datacross.com.mx, gabriel.garcia@sgwsistemas.com.mx';
-	$mail_to = 'raul@pcuervo.com';
+	$mail_to = 'clientes@sgwsistemas.com.mx, clientes@datacross.com.mx, gabriel.garcia@sgwsistemas.com.mx';
+	//$mail_to = 'raul@pcuervo.com';
 	$subject = 'Contacto Datacross '.$nombre;
 
 	$body_message = 'Nombre: '.$nombre."\n";
