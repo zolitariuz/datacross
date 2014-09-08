@@ -304,7 +304,7 @@ h1 img {
 }
 h2 {
     margin: 0;
-    font:  3em / 1 'proxima-nova';
+    font:  2.5em / 1 'proxima-nova';
     font-weight: 700;
     color: #ec1c24;
 }
@@ -711,7 +711,6 @@ footer p {
 
 .forma-contacto input[type='checkbox'] {
     width:auto;
-    margin-right: 20px;
     font-weight: 300;
     background: #004a97;
     color: #fff;
@@ -720,14 +719,13 @@ footer p {
     float: left;
 }
 
-.solicitar-demo p {
-    margin-right: 20px;
+.solicitar-demo label, .descarga label {
+    padding:0 10px;
+    text-align: left;
     color:red;
     font-size:1.5em;
     font-weight:bold;
     border: none;
-    display: inline-block;
-    float: left;
 }
 
 .verificador{

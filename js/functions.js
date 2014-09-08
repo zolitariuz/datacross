@@ -57,7 +57,7 @@
 				navigationStyle:"none",
 
 				touchenabled:"on",
-				onHoverStop:"on",
+				onHoverStop:"off",
 
 				swipe_velocity: 0.7,
 				swipe_min_touches: 1,
