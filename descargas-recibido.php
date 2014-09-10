@@ -10,15 +10,22 @@
 	$telefono 		= ( isset($_POST['telefono']) ) ? $_POST['telefono'] : '';
 	$mensaje 		= ( isset($_POST['mensaje']) ) ? $_POST['mensaje'] : '';
 
-	$mail_to = 'clientes@sgwsistemas.com.mx, clientes@datacross.com.mx, gabriel.garcia@sgwsistemas.com.mx';
-	//$mail_to = 'raul@pcuervo.com';
-	$subject = 'Contacto Datacross '.$nombre;
+	//$mail_to = 'clientes@sgwsistemas.com.mx, clientes@datacross.com.mx, gabriel.garcia@sgwsistemas.com.mx';
+	$mail_to = 'raul@pcuervo.com';
+	//$mail_to = 'raul@pcuervo.com, raul@zamacona.me';
+	$subject = 'Descarga Datacross';
 
 	$body_message = 'Nombre: '.$nombre."\n";
 	$body_message .= 'Empresa: '.$empresa."\n";
 	$body_message .= 'Mail: '.$mail."\n";
 	$body_message .= 'Telefono: '.$telefono."\n";
 	$body_message .= 'Mensaje: '.$mensaje."\n";
+	if ( $datacross_v2 == 'datacross_v2' ) {
+		$body_message .= 'Descargó: DataCross Versión 2.1';
+	}
+	if ( $guia_pdf == 'guia_pdf' ) {
+		$body_message .= 'Descargó: Guía de uso Datacross PDF';
+	}
 
 	$headers = 'From: '.$mail."\r\n";
 	$headers .= 'Reply-To: '.$mail."\r\n";
@@ -82,12 +89,13 @@
 			<div class="main not-home">
 				<section class="historia full">
 					<div class="span margin-bottom"><img class="contacto-wrapper" src="images/descargas_ch.jpg"></div>
-						<div class="clear"></div>
-						<div class="container-blanco columna xmall-10 center block margin-bottom clearfix">
+					<div class="clear"></div>
+					<div class="container-blanco columna xmall-10 center block margin-bottom clearfix">
 						<h2 class="columna xmall-6 text-center center margin-bottom">Descargas</h2>
+						<h3 class="text-center">Gracias por ponerte en contacto con nosotros, te contactarémos lo antes psoible.</h3>
 						<div class="clearfix columna xmall-6 center">
 							<?php if ( $datacross_v2 == 'datacross_v2' ) {?>
-								<a class="boton columna xmall-6 text-center" href="descargas/datacross_v2.1.zip">DataCross Versión 2.1</a>
+								<a class="boton columna xmall-6 text-center" href="descargas/datacross_v2_1.zip">DataCross Versión 2.1</a>
 							<?php } ?>
 							<?php if ( $guia_pdf == 'guia_pdf' ) {?>
 								<a target="_blank" class="boton columna xmall-6 text-center" href="descargas/guia_uso_datacross.pdf">Guía de uso Datacross PDF</a>

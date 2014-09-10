@@ -10,8 +10,8 @@
 	$demo 		= ( isset($_POST['demo']) ) ? $_POST['demo'] : '';
 
 	$mail_to = 'clientes@sgwsistemas.com.mx, clientes@datacross.com.mx, gabriel.garcia@sgwsistemas.com.mx';
-	//$mail_to = 'raul@pcuervo.com';
-	$subject = 'Contacto Datacross '.$nombre;
+	//$mail_to = 'raul@pcuervo.com, raul@zamacona.me';
+	$subject = 'Contacto Datacross';
 
 	$body_message = 'Nombre: '.$nombre."\n";
 	$body_message .= 'Empresa: '.$empresa."\n";
@@ -19,7 +19,9 @@
 	$body_message .= 'Telefono: '.$telefono."\n";
 	$body_message .= 'Mensaje: '.$mensaje."\n";
 	if ( $demo == '1' ){
-		$body_message .= '<strong>Solicitó demo</strong>';
+		$body_message .= 'Solicitó demo';
+	} else {
+		$body_message .= 'No solicitó demo';
 	}
 
 	$headers = 'From: '.$mail."\r\n";
@@ -91,14 +93,13 @@
 
 			<div class="main not-home">
 				<section class="full">
-						<div class="span margin-bottom"><img class="contacto-wrapper" src="images/descargas_ch.jpg"></div>
-						<div class="clear"></div>
-						<div class="container-blanco columna xmall-10 center block margin-bottom clearfix">
-							<h2 class="columna xmall-6 text-center center margin-bottom">Contacto recibido</h2>
-							<h3 class="text-center">Gracias por ponerte en contacto con nosotros, te contactarémos lo antes psoible.</h3>
-						</div>
+					<div class="span margin-bottom"><img class="contacto-wrapper" src="images/descargas_ch.jpg"></div>
+					<div class="clear"></div>
+					<div class="container-blanco columna xmall-10 center block margin-bottom clearfix">
+						<h2 class="columna xmall-6 text-center center margin-bottom">Contacto recibido</h2>
+						<h3 class="text-center">Gracias por ponerte en contacto con nosotros, te contactarémos lo antes psoible.</h3>
+					</div>
 				</section>
-
 			</div><!-- main -->
 
 			<!-- <footer>
