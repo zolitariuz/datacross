@@ -295,11 +295,11 @@ body {
 h1 {
     display: inline-block;
     vertical-align: middle;
-    width: 25%;
-    margin: 0 9% 0 0;
+    width: 20%;
+    margin: 0 3% 0 4%;
 }
 h1 img {
-    width: 100%;
+    width: 70%;
     height: auto;
 }
 h2 {
@@ -368,8 +368,8 @@ nav {
 nav a {
     display: inline-block;
     vertical-align: top;
-    width: 18%;
-    font:  1em / 1 "proxima-nova";
+    width: 19%;
+    font:  .8em / 1 "proxima-nova";
     font-weight: 300;
     color: #4e5758;
     text-align: center;
@@ -556,6 +556,7 @@ nav a i {
     float: left;
     margin-right: 10px;
     background-color: #eeeeee;
+    
     list-style-type: none;
     list-style: none;
 }
@@ -576,7 +577,14 @@ nav a i {
 .tabs-menu li a {
     padding: 10px;
     text-transform: uppercase;
-    color: #ccc;
+    color: #004a97;
+    text-decoration: none;
+}
+
+.tabs-menu li a:hover {
+    padding: 10px;
+    text-transform: uppercase;
+    color: #fff;
     text-decoration: none;
 }
 .tabs-menu .current a {
@@ -908,8 +916,28 @@ footer p {
 }
 
 
+nav a {
+    display: inline-block;
+    vertical-align: top;
+    width: 19%;
+    font:  1em / 1 "proxima-nova";
+    font-weight: 300;
+    color: #4e5758;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
 
-}@media only screen and (min-width:90.063em) {
+
+}
+
+
+
+@media only screen and (min-width:90.063em) {
     .columna.xlarge-1 {
     width: 6.3%}
 .columna.xlarge-2 {
