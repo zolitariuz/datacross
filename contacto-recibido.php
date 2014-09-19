@@ -9,8 +9,8 @@
 	$mensaje 	= ( isset($_POST['mensaje']) ) ? $_POST['mensaje'] : '';
 	$demo 		= ( isset($_POST['demo']) ) ? $_POST['demo'] : '';
 
-	//$mail_to = 'clientes@sgwsistemas.com.mx, clientes@datacross.com.mx, gabriel.garcia@sgwsistemas.com.mx, raul@pcuervo.com';
-	$mail_to = 'raul@pcuervo.com, raul.zdesign@gmail.com';
+	$mail_to = 'clientes@sgwsistemas.com.mx, clientes@datacross.com.mx, gabriel.garcia@sgwsistemas.com.mx, raul@pcuervo.com';
+	//$mail_to = 'raul@pcuervo.com, raul.zdesign@gmail.com';
 	$subject = 'Contacto Datacross';
 
 	$body_message = 'Nombre: '.$nombre."\n";
@@ -24,7 +24,7 @@
 		$body_message .= 'No solicitó demo';
 	}
 
-	$headers = 'From: '.$mail."\r\n";
+	$headers = 'From: '.$nombre."\r\n";
 	$headers .= 'Reply-To: '.$mail."\r\n";
 
 	$mail_status = mail($mail_to, $subject, $body_message, $headers);

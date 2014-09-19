@@ -9,9 +9,8 @@
 	$mail 			= ( isset($_POST['mail']) ) ? $_POST['mail'] : '';
 	$telefono 		= ( isset($_POST['telefono']) ) ? $_POST['telefono'] : '';
 
-	//$mail_to = 'clientes@sgwsistemas.com.mx, clientes@datacross.com.mx, gabriel.garcia@sgwsistemas.com.mx, raul@pcuervo.com';
-	//$mail_to = 'raul@pcuervo.com';
-	$mail_to = 'raul@pcuervo.com, raul.zdesign@gmail.com';
+	$mail_to = 'clientes@sgwsistemas.com.mx, clientes@datacross.com.mx, gabriel.garcia@sgwsistemas.com.mx, raul@pcuervo.com';
+	//$mail_to = 'raul@pcuervo.com, raul.zdesign@gmail.com';
 	$subject = 'Descarga Datacross';
 
 	$body_message = 'Nombre: '.$nombre."\n";
@@ -25,7 +24,7 @@
 		$body_message .= 'Descargó: Guía de uso Datacross PDF'."\n";
 	}
 
-	$headers = 'From: '.$mail."\r\n";
+	$headers = 'From: '.$nombre."\r\n";
 	$headers .= 'Reply-To: '.$mail."\r\n";
 
 	$mail_status = mail($mail_to, $subject, $body_message, $headers);
