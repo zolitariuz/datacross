@@ -8,7 +8,6 @@
 	$empresa 		= ( isset($_POST['empresa']) ) ? $_POST['empresa'] : '';
 	$mail 			= ( isset($_POST['mail']) ) ? $_POST['mail'] : '';
 	$telefono 		= ( isset($_POST['telefono']) ) ? $_POST['telefono'] : '';
-	$mensaje 		= ( isset($_POST['mensaje']) ) ? $_POST['mensaje'] : '';
 
 	$mail_to = 'clientes@sgwsistemas.com.mx, clientes@datacross.com.mx, gabriel.garcia@sgwsistemas.com.mx, raul@pcuervo.com';
 	//$mail_to = 'raul@pcuervo.com';
@@ -19,12 +18,11 @@
 	$body_message .= 'Empresa: '.$empresa."\n";
 	$body_message .= 'Mail: '.$mail."\n";
 	$body_message .= 'Telefono: '.$telefono."\n";
-	$body_message .= 'Mensaje: '.$mensaje."\n";
 	if ( $datacross_v2 == 'datacross_v2' ) {
-		$body_message .= 'Descargó: DataCross Versión 2.1';
+		$body_message .= 'Descargó: DataCross Versión 2.1'."\n";
 	}
 	if ( $guia_pdf == 'guia_pdf' ) {
-		$body_message .= 'Descargó: Guía de uso Datacross PDF';
+		$body_message .= 'Descargó: Guía de uso Datacross PDF'."\n";
 	}
 
 	$headers = 'From: '.$mail."\r\n";
