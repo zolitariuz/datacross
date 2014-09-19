@@ -9,7 +9,7 @@
 	$mensaje 	= ( isset($_POST['mensaje']) ) ? $_POST['mensaje'] : '';
 	$demo 		= ( isset($_POST['demo']) ) ? $_POST['demo'] : '';
 
-	$mail_to = 'clientes@sgwsistemas.com.mx, clientes@datacross.com.mx, gabriel.garcia@sgwsistemas.com.mx';
+	$mail_to = 'clientes@sgwsistemas.com.mx, clientes@datacross.com.mx, gabriel.garcia@sgwsistemas.com.mx, raul@pcuervo.com';
 	//$mail_to = 'raul@pcuervo.com, raul@zamacona.me';
 	$subject = 'Contacto Datacross';
 
