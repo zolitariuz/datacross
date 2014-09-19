@@ -9,8 +9,8 @@
 	$mensaje 	= ( isset($_POST['mensaje']) ) ? $_POST['mensaje'] : '';
 	$demo 		= ( isset($_POST['demo']) ) ? $_POST['demo'] : '';
 
-	$mail_to = 'clientes@sgwsistemas.com.mx, clientes@datacross.com.mx, gabriel.garcia@sgwsistemas.com.mx, raul@pcuervo.com';
-	//$mail_to = 'raul@pcuervo.com, raul@zamacona.me';
+	//$mail_to = 'clientes@sgwsistemas.com.mx, clientes@datacross.com.mx, gabriel.garcia@sgwsistemas.com.mx, raul@pcuervo.com';
+	$mail_to = 'raul@pcuervo.com, raul.zdesign@gmail.com';
 	$subject = 'Contacto Datacross';
 
 	$body_message = 'Nombre: '.$nombre."\n";
@@ -97,7 +97,7 @@
 					<div class="clear"></div>
 					<div class="container-blanco columna xmall-10 center block margin-bottom clearfix">
 						<h2 class="columna xmall-6 text-center center margin-bottom">Contacto recibido</h2>
-						<h3 class="text-center">Gracias por ponerte en contacto con nosotros, te contactarémos lo antes psoible.</h3>
+						<h3 class="text-center">Gracias por ponerte en contacto con nosotros, te contactaremos lo antes posible.</h3>
 					</div>
 				</section>
 			</div><!-- main -->

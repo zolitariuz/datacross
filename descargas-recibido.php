@@ -9,9 +9,9 @@
 	$mail 			= ( isset($_POST['mail']) ) ? $_POST['mail'] : '';
 	$telefono 		= ( isset($_POST['telefono']) ) ? $_POST['telefono'] : '';
 
-	$mail_to = 'clientes@sgwsistemas.com.mx, clientes@datacross.com.mx, gabriel.garcia@sgwsistemas.com.mx, raul@pcuervo.com';
+	//$mail_to = 'clientes@sgwsistemas.com.mx, clientes@datacross.com.mx, gabriel.garcia@sgwsistemas.com.mx, raul@pcuervo.com';
 	//$mail_to = 'raul@pcuervo.com';
-	//$mail_to = 'raul@pcuervo.com, raul@zamacona.me';
+	$mail_to = 'raul@pcuervo.com, raul.zdesign@gmail.com';
 	$subject = 'Descarga Datacross';
 
 	$body_message = 'Nombre: '.$nombre."\n";
@@ -90,7 +90,7 @@
 					<div class="clear"></div>
 					<div class="container-blanco columna xmall-10 center block margin-bottom clearfix">
 						<h2 class="columna xmall-6 text-center center margin-bottom">Descargas</h2>
-						<h3 class="text-center">Gracias por ponerte en contacto con nosotros, te contactarémos lo antes psoible.</h3>
+						<h3 class="text-center">Gracias por ponerte en contacto con nosotros, te contactaremos lo antes posible.</h3>
 						<div class="clearfix columna xmall-6 center">
 							<?php if ( $datacross_v2 == 'datacross_v2' ) {?>
 								<a class="boton columna xmall-6 text-center" href="descargas/datacross_v2_1.zip">DataCross Versión 2.1</a>
